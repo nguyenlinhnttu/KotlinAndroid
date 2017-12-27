@@ -3,7 +3,11 @@ package com.example.kotlinandroid
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import android.widget.Toast
 import com.example.kotlinandroid.model.Student
+import com.example.kotlinandroid.model.StudentData
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -111,10 +115,34 @@ class MainActivity : AppCompatActivity() {
         showName(null);
 
         /*------- LESSON 8 OOP: -------*/
-        var student1 :Student = Student()
-        student1.name = "Linh"
-        student1.age = 22
-        Log.d("OOP STUDNET: ",student1.name +"\n" + student1.age)
+        var student1 = Student()
+        student1.setName("Linh");
+        student1.setAge(22)
+        Log.d("OOP STUDENT: ",student1.getName() +"\n" + student1.getAge())
+
+
+        /*------- LESSON 9 CLASS DATA: -------*/
+        var studentDT = StudentData("Linh2", 22)
+        Log.d("CLASS DATA: ",studentDT.name +"\n" + studentDT.age)
+        Log.d("CLASS DATA: ","DATA ${studentDT.name} + ${studentDT.age}")
+
+        /*------- LESSON 10 First Android: -------*/
+        tv_hello.text = "Hello Kotlin Android"
+
+        //Type Click 1
+        tv_hello.setOnClickListener {
+            Toast.makeText(this,"Click!", Toast.LENGTH_SHORT).show()
+
+            //Type Click 2
+            tv_hello.setOnClickListener(object : View.OnClickListener{
+                override fun onClick(p0: View?) {
+                    Toast.makeText(this@MainActivity,"Click! 2", Toast.LENGTH_SHORT).show()
+                }
+
+            })
+        }
+
+
     }
 
     fun showName(){
