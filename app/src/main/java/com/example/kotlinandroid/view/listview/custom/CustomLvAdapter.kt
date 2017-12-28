@@ -8,6 +8,7 @@ import android.widget.BaseAdapter
 import android.widget.TextView
 import android.widget.Toast
 import com.example.kotlinandroid.R
+import com.example.kotlinandroid.view.model.People
 
 /**
  * Created by nguyenvanlinh on 12/28/17.

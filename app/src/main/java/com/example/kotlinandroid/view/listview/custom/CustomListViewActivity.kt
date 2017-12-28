@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.ListView
 import com.example.kotlinandroid.R
+import com.example.kotlinandroid.view.model.People
 import kotlinx.android.synthetic.main.activity_custom_listview.*
 
 /**

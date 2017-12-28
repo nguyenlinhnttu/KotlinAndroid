@@ -1,4 +1,4 @@
-package com.example.kotlinandroid.view.listview.custom
+package com.example.kotlinandroid.view.model
 
 /**
  * Created by nguyenvanlinh on 12/28/17.
