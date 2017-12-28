@@ -25,4 +25,15 @@ class ViewPagerAdapter : FragmentPagerAdapter {
         return arrFragment.size
     }
 
+    //Title TabLayout here
+    override fun getPageTitle(position: Int): CharSequence {
+        var title :String = ""
+        when (position) {
+            0 -> title = "One"
+            1 -> title = "Two"
+            2 -> title = "Three"
+        }
+        return title
+    }
+
 }
