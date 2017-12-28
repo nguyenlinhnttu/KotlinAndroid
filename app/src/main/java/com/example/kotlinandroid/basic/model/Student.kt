@@ -1,4 +1,4 @@
-package com.example.kotlinandroid.model
+package com.example.kotlinandroid.basic.model
 
 /**
  * Created by nguyenvanlinh on 12/27/17.

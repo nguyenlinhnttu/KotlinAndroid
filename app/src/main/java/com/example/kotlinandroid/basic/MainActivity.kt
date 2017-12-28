@@ -1,12 +1,13 @@
-package com.example.kotlinandroid
+package com.example.kotlinandroid.basic
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Toast
-import com.example.kotlinandroid.model.Student
-import com.example.kotlinandroid.model.StudentData
+import com.example.kotlinandroid.R
+import com.example.kotlinandroid.basic.model.Student
+import com.example.kotlinandroid.basic.model.StudentData
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
